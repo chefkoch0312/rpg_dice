@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPG_Dice</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <script src="./assets/js/index.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>RPG Dice</h1>
+        <h3>Zufallswürfel, wie sie jeder RPG-Gamer hin und wieder braucht.</h3>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main content">
+                <p>
+                    <label for="wuerfel">Würfel:</label>
+                    <input type="number" name="wuerfel" id="wuerfel" min="1" max="10" value="1">
+                    <button id="btnWuerfeln">Würfeln</button>
+                    <input type="number" name="offset" id="offset" min="-100" max="100" value="1">
+                </p>
+                <div id="output">
+                    <textarea id="taOutput"></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span class="copy">
+            <p>&copy; 2024, Kai Dombrowski</p>
+        </span>
+    </footer>
+</body>
+
+</html>
